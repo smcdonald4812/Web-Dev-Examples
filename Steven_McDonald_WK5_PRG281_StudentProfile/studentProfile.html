@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<title name="userProfile">Steven McDonald</title>
+		<link href="StudentProfileCSS.css" type="text/css" rel="stylesheet"></link>
+    </head>
+    <body>
+		<hgroup>
+			<h1 class="heads" id="userName">Steven McDonald</h1>
+			<h3 class="heads" id="userDegree">Bachelors of Science in Information Technologies- Programming Certificate</h3>
+		</hgroup>
+		<nav id="navBar">
+			<ol id="navTable">
+					<button id="b1">
+						<li id="genInfo" class="navTable">General Information</li>
+					</button>
+					<button id="b2">
+						<li id="stuInfo" class="navTable">Student Information</li>
+					</button>
+					<button id="b3">
+						<li id="hobbies" class="navTable">Hobbies</li>
+					</button>
+					<button id="b4">
+						<li id="aftGrad" class="navTable">After Graduation</li>
+					</button>
+			</ol>
+		</nav>
+		<div id = "showHide1" class="showHide" name="generalInfo">
+			<video class="imgFloat" alt="Spinning World" autoplay loop muted>
+				<source src="profile.mp4" type="video/mp4">
+				<source src="profile.ogv" type="video/ogg">
+				<source src="profile.webm" type="video/webm">
+					<p>Your browser does not natively support video</p>
+			</video>
+		<span class="spanFloat">
+			<h5 class="tabTitle">A Little About Me</h5>	
+				<table class="tables" rows="2" cols="4">	
+					<tbody>
+						<tr>
+							<td>Age:</td>					
+								<col><td>25</td></col>
+						</tr>
+						<tr>
+							<td>Occupation:</td>					
+								<col><td>OTR Driver</td></col>
+						</tr>
+						<tr>
+							<td>City:</td>					
+								<col><td>Millsboro</td></col>
+						</tr>
+						<tr>
+							<td>State:</td>					
+								<col><td>DE</td></col>
+						</tr>
+					</tbody>
+			</table>
+		</span>
+		</div>
+		<div id = "showHide2" class="showHide" name="studentInfo">
+			<video class="imgFloat" alt="Typing Laptop" autoplay loop muted>
+				<source src="studentDiv.mp4" type="video/mp4">
+				<source src="studentDiv.ogv" type="video/ogg">
+				<source src="studentDiv.webm" type="video/webm">
+					<p>Your browser does not natively support video</p>
+			</video>
+		<span class="spanFloat">
+			<h5 class="tabTitle">Student Information</h5>	
+				<table class="tables" rows="2" cols="6">	
+					<tbody>
+						<tr>
+							<td>Year:</td>					
+								<col><td>Junior</td></col>
+						</tr>
+						<tr>
+							<td>Field of Study:</td>					
+								<col><td>Information Technologies</td></col>
+						</tr>
+						<tr>
+							<td>Certificate:</td>					
+								<col><td>Programming</td></col>
+						</tr>
+						<tr>
+							<td>Areas of Interest:</td>	
+								<colgroup>
+									<col><td>Software Engineering</td></col>												
+									<col><td>Data Security</td></col>
+									<col><td>Web Development</td></col>
+								</colgroup>
+						</tr>
+					</tbody>
+			</table>
+		</span>
+		</div>
+		<div id = "showHide3" class="showHide" name="hobbies">
+			<span class="imgFloat">
+				<img class="inSpan" src="coding.jpg" alt="Image of HTML" />
+				<audio alt="Game-like Music" controls>
+					<source src="hobby.mp3" type="audio/mp4">
+					<source src="hobby.ogg" type="audio/ogg">
+					<source src="hobby.wav" type="audio/wav">
+						<p>Your browser does not natively support audio</p>
+				</audio>
+			</span>
+		<span class="spanFloat">
+			<h5 class="tabTitle">Hobbies</h5>	
+				<table class="tables" rows="2" cols="#">	
+					<tbody>
+						<tr>
+							<td>Programming:</td>					
+							<col><td>Learning different programming languages</td></col>
+						</tr>
+						<tr>
+							<td>Shows:</td>					
+								<colgroup>
+									<col><td>British Shows</td></col>											
+									<col><td>Anime</td></col>
+									<col><td>SciFi</td></col>
+									<col><td>Netflix Originals</td></col>
+									<col><td>Comedies</td></col>
+								</colgroup>
+						</tr>
+						<tr>
+							<td>Video Games:</td>					
+								<colgroup>	
+									<col><td>Strategy</td></col>											
+									<col><td>FPS</td></col>
+									<col><td>RTS</td></col>
+									<col><td>Retro</td></col>
+									<col><td>Indie</td></col>
+									<col><td>competitive</td></col>
+							</colgroup>
+						</tr>
+						<tr>
+							<td>Music:</td>												
+								<colgroup>
+									<col><td>Classical</td></col>												
+									<col><td>Classic Rock</td></col>
+									<col><td>Alternative</td></col>
+									<col><td>80's-90's Rap</td></col>
+									<col><td>Punk Rock</td></col>
+								</colgroup>
+						</tr>
+					</tbody>
+			</table>
+		</span>		
+		</div>
+		<div id = "showHide4" class="showHide" name="afterGrad">
+		<img class="imgFloat" src="gradCap.png" alt="Graduation Cap" />
+		<span class="spanFloat">
+			<h5 class="tabTitle">After Graduation</h5>	
+				<table class="tables" rows="2" cols="#">	
+					<tbody>
+						<tr>
+							<td>School:</td>					
+							<col><td>I plan to continue on to a master's Degree</td></col>
+						</tr>
+						<tr>
+							<td>Career Path Possibilities:</td>					
+								<colgroup>	
+									<col><td>Mobile Developer</td></col>				
+									<col><td>IT Consultant</td></col>
+									<col><td>Freelance</td></col>
+									<col><td>Web Developer</td></col>
+									<col><td>Entrepreneur</td></col>
+								</colgroup>
+						</tr>
+						</tr>
+					</tbody>
+			</table>
+		</span>
+		</div>
+		<script src="StudentProfileJavaScript.js"></script>
+	</body>
+</html>

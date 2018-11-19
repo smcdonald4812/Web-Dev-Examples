@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>New Customer</title>
+</head>
+
+<body>
+<h1 align = "center" >New Customer Form</h1>
+<fieldset>
+	<legend>Basic Information</legend>
+	<label>First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "text" id = "name1" value = "first name" required/>
+	<br>
+	<label>Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "text" id = "name2" value = "last name" required/>
+	<br>
+	<label>DOB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "number" id = "dob" value = "Date of Birth" required/>
+	<br>
+	<label>Phone Number</label>
+	<input type = "tel" id = "cusTel" value = "phone number" required/>
+	<br>
+	<label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "email" id = "cusEmail" value = "customer@email" required/>
+	<br>
+</fieldset>
+<fieldset>
+	<legend>Customer Address</legend>
+	<label>Is the customer in the U.S.?</label>
+	<br>
+	<input type = "radio" id = "domFor1" value = "true" checked > yes
+	<br>
+	<input type = "radio" id = "domFor2" value = "false" > no
+	<br>
+	<script>
+		foreign = GetElementByid(domfor2);
+		if (foreign == checked) {
+			alert("I'm sorry to inform you that our services are not currently available outside of the United States at this time.");
+		}
+	</script>
+	<br>
+	<label>Street &nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "text" id = "street" value = "street" required/>
+	<br>
+	<label>Apt &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "text" id = "apartment" value = "apartment" required/>
+	<br>
+	<label>town &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "text" id = "town" value = "town" required/>
+	<br>
+	<label>State &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "text" id = "state" value = "state abbreviation" required/>
+	<br>
+	<label>Zip code</label>
+	<input type = "number" id = "zip" value = "12345" required/>
+	<br>
+</fieldset>
+<br>
+<fieldset>
+	<legend>Marketing Questions</legend>
+	<label>Why is this new customer opening an account?</label>
+	<select>
+		<option value = "new business" id = "why1" >New Business</option>
+		<option value = "our price" id = "why2" >Our Price</option>
+		<option value = "location" id = "why3" >Location</option>
+		<option value = "product" id = "why4" >Our Product</option>
+		<option value = "other" id = "why5" >Other</option>
+	</select>
+	<br>
+	<label>Is the customer using a promotional code or coupon?</label>
+	<br>
+	<input type = "radio" id = "marketing1" value = "true" > yes
+	<br>
+	<input type = "radio" id = "marketing2" value = "false" > no
+	<br>
+</fieldset>
+<br>
+<div align = "center">
+	<button type = "submit" text = "Submit" >Submit</button>
+</div>
+</body>
+</html>

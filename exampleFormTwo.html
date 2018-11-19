@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Target Audience</title>
+</head>
+<body>
+<h1 align = "center" >Customer Survey</h1>
+<fieldset>
+	<legend>Your Information</legend>
+	<label>First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "text" id = "name1" value = "first name" required/>
+	<br>
+	<label>Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "text" id = "name2" value = "last name" required/>
+	<br>
+	<label>Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "number" id = "age" value = "age" required/>
+	<br>
+	<label>Phone Number</label>
+	<input type = "tel" id = "cusTel" value = "optional" required/>
+	<br>
+	<label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<input type = "email" id = "cusEmail" value = "optional" required/>
+	<br>
+</fieldset>
+<br>
+<fieldset>
+	<legend>Survey Questions</legend>
+	<label>How was you overall purchasing experience (scale of 1-5)</label>
+	<br>
+	<select>
+		<option value = "the worst" id = "rate1" >Worst</option>
+		<option value = "below average" id = "rate2" >below average</option>
+		<option value = "average" id = "rate3" >average</option>
+		<option value = "great" id = "rate4" >great</option>
+		<option value = "amazing" id = "rate5" >amazing</option>
+	</select>
+	<br>
+	<label>Tell us about it!</label>
+	<br>
+	<textarea cols = "100" rows = "10">Type Here</textarea>
+	<br>
+	<label>Did this purchase involve any promotions?</label>
+	<br>
+	<input type = "radio" id = "marketing1" value = "true" > yes
+	<br>
+	<input type = "radio" id = "marketing2" value = "false" > no
+	<br>
+	<label>Where did you hear about us?</label>
+	<br>
+	<select>
+		<option value = "radio" id = "where1" >Radio</option>
+		<option value = "tv" id = "where2" >T.V.</option>
+		<option value = "site" id = "where3" >Our Site</option>
+		<option value = "otherSite" id = "where4" >Other Site</option>
+		<option value = "other" id = "where5" >Other</option>
+	</select>
+</fieldset>
+<br>
+<div align = "center">
+	<button type = "submit" text = "Submit" >Submit</button>
+</div>
+</body>
+</html>

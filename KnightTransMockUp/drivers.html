@@ -1,0 +1,152 @@
+<!DOCUMENT html>
+<TITLE font-weight: b>
+Knight Transportation
+</TITLE>
+<HEAD>
+	<meta charset="UTF-8">
+	<font-family: sans-serif;>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</HEAD>
+<BODY>
+<header class="headSty">
+<aside><img class="imgLogo" src="KnightLogo.png" alt="Knight Transpotation Logo"></aside>
+<h1> 
+Knight Transportation 
+</h1>
+</header>
+<br>
+<br>
+<nav id="nav6">
+<ul class="navUl">
+<li class="navLi">
+<a class="navA" href="KnightTransMockUp.html">home</a>
+</li>
+<li class="navLi">
+<a class="navA" href="about.html">About</a>
+</li>
+<li class="navLi">
+<a class="navA" href="consumers.html">Consumers</a>
+</li>
+<li class="navLi">
+<a class="navA" href="shareholders.html">Shareholders</a>
+</li>
+<li class="navLi">
+<a class="navA" href="drivers.html">Drivers</a>
+</li>
+<li class="navLi">
+<a class="navA" href="ourenvironment.html">Our Environment</a>
+</li>
+<li class="lastLi">
+<a class="navA" href="contactus.html">Contact Us</a>
+</li>
+</ul>
+</nav>
+<div>
+<h2 style="text-align: center; font-weight: bold;"> Welcome Drivers!</h2>
+<p>
+<article class="articSty">
+Here at Knight we strive to take the best care of our drivers. We are currently looking to hire experienced
+OTR drivers. If you are interested in recieving more information, please enter in your contact information below.
+We will contact you as soon as possible.
+</article>
+</p>
+<fieldset>
+	<legend>Contact Information</legend>
+		<form id="contactInfo" method="post" action="sort()">
+			<label for="firstName">First Name</label>
+				<input id="name1" pattern="[a-z]" required autocomplete autofocus name="firstName" type="text" placeholder="First name here"/>
+		<br>
+			<label for="lastName">Last Name</label>
+				<input id="name2" pattern="[a-z]" required autocomplete name="lastName" type="text" placeholder="Last name here"/>
+		<br>
+			<label for="email">Email</label>
+				<input id="email" required autocomplete pattern=".{0,30}" name="lastName" type="email" placeholder="Enter your email address here"/>
+		<br>
+			<label for="phoneNum">Phone Number</label>
+				<input id="phone" required autocomplete name="phoneNum" type="tel" placeholder="(555)555-5555"/>
+		<br>
+			<label for="zipCode">Zip Code</label>
+				<input id="zip" required autocomplete name="zipCode" type="text" pattern="[0-9]{5,5}" placeholder="enter zip code"/>
+		</form>
+		<hr>
+	<legend>Work Experience</legend>
+		<form name="workForm" id="workExp" method="post" action="sort()">
+			<label for="workYrs">OTR Experience</label>
+				<select id="exp" type="text" required name="workYrs">
+					<option class="exp" id="1" name="expRad" value="0">0-6 months</option>
+					<option class="exp" id="2" name="expRad" value="1">6-12 months</option>
+					<option class="exp" id="3" name="expRad" value="2">1-2 years</option>
+					<option class="exp" id="4" name="expRad" value="3">2-5 years</option>
+					<option class="exp" id="5" name="expRad" value="4">5+ years</option>
+				</select>
+		<br>
+			<label for="accidentsTickets">How many accidents, DUIs, and tickets have you had in the last 3 years?</label>
+		<br>
+				<input class="acc" id="r1" type="radio" name="opt" value="0" checked/>0
+		<br>
+				<input class="acc" id="r2" type="radio" name="opt" value="1"/>1
+		<br>			
+				<input class="acc" id="r3" type="radio" name="opt" value="2"/>2
+		<br>			
+				<input class="acc" id="r4" type="radio" name="opt" value="3 or more"/>3 or more
+		<br>
+			<label for="dui">Was this a DUI?</label>
+		<br>
+				<input class="dui" id="d1" type="radio" name="d" value="yes"/>Yes
+		<br>
+				<input class="dui" id="d2" type="radio" name="d" value="no" checked/>No
+		<br>
+			<label for="companies">How many OTR or local companies have you worked for in the last year?</label>
+		<br>
+				<input class="comp" id="c1" type="radio" name="c" value="0"/>0
+		<br>
+				<input class="comp" id="c2" type="radio" name="c" value="1"/>1
+		<br>
+				<input class="comp" id="c3" type="radio" name="c" value="2"/>2
+		<br>
+				<input class="comp" id="c4" type="radio" name="c" value="3 or more"/>3 or more
+		<br>
+			<label for="dotCdl">Is your CDL and DOT physical cards up to date?</label>
+		<br>
+				<input class="dot" id="cdl1" type="radio" name="cdl" value="1" checked/>Yes
+		<br>
+				<input class="dot" id="cdl2" type="radio" name="cdl" value="2"/>no
+		<br>
+		</form>
+	<button name="submit" type="submit" onclick="sort()">Submit</button>
+</fieldset>
+</div>
+<footer class="footSty">
+<a class="navRe" href="#nav2">Retun to navigational bar</a>
+<a class="email" href="mailto: exampleemailcontact@email.com?subject=sitegeneralmail&body=I am contacting this site about:">
+exampleemailcontact@email.com</a>
+<h4>&copy; none Made as a mockup of the official Knight Transportation site for academic purposes by: Steven McDonald</h4> 
+</footer>
+	<script type="text/javascript">
+function funct() {
+	var navChange = document.getElementsByTagName("a");
+			if (navChange.onclick) {
+				navChange.style.fontSize(".5em");
+				navChange.stlye.color("#33FFff");
+			}
+			else if (navChange.onfocus) {
+				navChange.style.fontSize(".5em");
+				navChange.stlye.color("#33FFff");
+			}
+}
+	</script>
+	<script type="text/javascript">
+		function sort() {
+			var otr = document.getElementsByClassName("exp").value;
+			var accident = document.getElementsByClassName("acc").value;
+			var dui = document.getElementsByClassName("dui").value;
+			var companies = document.getElementsByClassName("comp").value;
+			if ((otr > 1) && (accident <= 2) && (dui == 2) && (companies < 2)) {
+				alert("This script works!!!");
+				}
+			else {
+				alert("Sorry, we are not currently looking for drivers at this time.");
+			}
+		}
+	</script>
+</BODY>
